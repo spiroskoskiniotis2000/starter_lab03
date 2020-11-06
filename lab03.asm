@@ -37,7 +37,36 @@ main:
 # a1 - address of string 2
 strcmp:
 ######################################################
-#  strcmp code here!
+
+loop:
+	add	$s0,$zero,$a0
+	add	$s1,$zero,$a1
+	lb	$t0,0($s0)
+	lb	$t1,0($s1)
+	beq	$t0,$t1,equal
+	slt	$t2,$t0,$t1
+	bne	$t2,zero,less
+	beq	$t2,$zero,greater
+
+less:	
+	addi	$v0,$zero,-1
+	j	exit
+	
+
+greater:
+	addi	$v0,$zero,1
+	j	exit
+	
+
+equal:
+	add  	$v0,$zero,$zero
+	beq	$t0,$zero,exit
+	addi	$s0,$so,1
+	addi	$s1,$s1,1
+	j	loop
+	
+
+exit:
 ######################################################
             jr   $ra
 
