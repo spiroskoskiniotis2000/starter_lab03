@@ -1,10 +1,7 @@
 
 ## UoI-CSE-MYY505 lab03
 
-## First-Name Last-Name
-
-**TODO - Update your name in this readme. Leave 1 space after the ## to preserve the text formating**
-
+## SPIROS KOSKINIOTIS
 
 ## Problem statement:
 Write a MIPS assembly program which searches for a string in a sorted array using recursive binary search and
