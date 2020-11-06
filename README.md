@@ -1,7 +1,7 @@
 
 ## UoI-CSE-MYY505 lab03
 
-## First-Name Last-Name
+## SPIROS KOSKINIOTIS
 
 **TODO - Update your name in this readme. Leave 1 space after the ## to preserve the text formating**
 
